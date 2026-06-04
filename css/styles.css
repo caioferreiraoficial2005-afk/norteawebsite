@@ -347,6 +347,7 @@ img { display: block; max-width: 100%; }
   position: relative;
   display: inline-block;
   color: var(--green-vivid);
+  padding-bottom: 16px;
 }
 .hero-underline-svg {
   position: absolute;
@@ -1292,8 +1293,9 @@ img { display: block; max-width: 100%; }
 ================================= */
 @media (max-width: 768px) {
   .nav-links { display: none; }
-  .nav-logo-img { height: 32px; }
-  .nav-cta.btn { padding: 8px 14px; font-size: 12px; }
+  .nav-cta { display: none; }
+  .nav-inner { justify-content: center; }
+  .nav-logo-img { height: 38px; }
 
   #hero { min-height: 100svh; padding-top: 88px; }
   .hero-grid { grid-template-columns: 1fr; gap: 48px; }
