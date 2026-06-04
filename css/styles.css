@@ -347,7 +347,6 @@ img { display: block; max-width: 100%; }
   position: relative;
   display: inline-block;
   color: var(--green-vivid);
-  padding-bottom: 26px;
 }
 .hero-underline-svg {
   position: absolute;
