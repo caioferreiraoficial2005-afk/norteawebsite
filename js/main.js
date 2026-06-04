@@ -28,14 +28,11 @@
   setTimeout(() => overlay.remove(), 6700);
 })();
 
-/* ── Nav: dark on hero, light after scroll past hero ── */
+/* ── Nav: sempre escura após scroll ── */
 const nav = document.getElementById('nav');
-const hero = document.getElementById('hero');
 
 window.addEventListener('scroll', () => {
-  const heroBottom = hero.getBoundingClientRect().bottom;
   nav.classList.toggle('scrolled', window.scrollY > 20);
-  nav.classList.toggle('light-nav', heroBottom < 68);
 }, { passive: true });
 
 /* ── Reveal on scroll ── */
